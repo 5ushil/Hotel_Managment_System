@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - RR Hotels</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Visual sitemap for RR Hotels website.">
+    <style>
+        .sitemap-tree {
+            font-size: 1.2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .sitemap-tree ul {
+            list-style-type: none;
+            margin-left: 1.5em;
+            padding-left: 1em;
+            border-left: 2px solid var(--primary);
+        }
+        .sitemap-tree li {
+            margin: 0.5em 0;
+            position: relative;
+        }
+        .sitemap-tree li::before {
+            content: "├─";
+            position: absolute;
+            left: -1.5em;
+            color: var(--secondary);
+        }
+        .sitemap-tree li:last-child::before {
+            content: "└─";
+        }
+        .sitemap-tree a {
+            color: var(--dark);
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        .sitemap-tree a:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">&#127976;</span>
+                <span>RR Hotels</span>
+            </div>
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Rooms.html">Rooms</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Review.html">Reviews</a>
+                <a href="Booking.html" class="book-btn">Book Now</a>
+                <a href="CancelBooking.html">Cancel Booking</a>
+                <a href="FutureScope.html">Future Scope</a>
+                <a href="Sitemap.html" class="active">Sitemap</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sitemap Section -->
+    <section class="about-section">
+        <h2 class="section-title">Sitemap</h2>
+        <div class="sitemap-tree">
+            <ul>
+                <li><a href="Home.html">Home</a>
+                    <ul>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Rooms.html">Our Rooms</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Review.html">Guest Reviews</a></li>
+                        <li><a href="Booking.html">Book Your Stay</a></li>
+                        <li><a href="CancelBooking.html">Cancel Booking</a></li>
+                        <li><a href="FutureScope.html">Future Scope</a></li>
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-title">Contact Us</div>
+        <div class="footer-contact">
+            <a href="tel:+919876543210">&#128222; +91 9876543210</a>
+            <a href="mailto:info@rrhotels.com">&#9993; info@rrhotels.com</a>
+            <a href="#">&#128205; Kochi, Kerala</a>
+        </div>
+        <div class="footer-social">
+            <a href="#">&#128100;</a>
+            <a href="#">&#128247;</a>
+            <a href="#">&#128172;</a>
+        </div>
+        <div class="footer-copy">&copy; 2025 RR Hotels. All rights reserved.</div>
+    </footer>
+</body>
+</html>

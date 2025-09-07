@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Hotels - Luxury Redefined</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">&#127976;</span>
+                <span>RR Hotels</span>
+            </div>
+            <nav>
+                <a href="Home.html" class="active">Home</a>
+                <a href="About.html">About</a>
+                <a href="Rooms.html">Rooms</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Review.html">Reviews</a>
+                <a href="Booking.html" class="book-btn">Book Now</a>
+                <a href="CancelBooking.html">Cancel Booking</a>
+                <a href="FutureScope.html">Future Scope</a>
+                <a href="Sitemap.html">Sitemap</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-bg">
+        <div class="hero-content">
+            <h1>Welcome to RR Hotels</h1>
+            <p>Experience luxury and comfort in the heart of Kochi</p>
+            <a href="Rooms.html" class="explore-btn">Explore Rooms</a>
+        </div>
+    </section>
+
+    <!-- Availability Form -->
+    <section class="availability-section">
+        <h2 class="section-title">Check Availability</h2>
+        <form class="availability-form">
+            <div>
+                <label for="checkin">Check In</label>
+                <input type="date" id="checkin" required>
+            </div>
+            <div>
+                <label for="checkout">Check Out</label>
+                <input type="date" id="checkout" required>
+            </div>
+            <div>
+                <label for="adults">Adults</label>
+                <select id="adults" required>
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                    <option>4 Adults</option>
+                </select>
+            </div>
+            <div>
+                <label for="children">Children</label>
+                <select id="children" required>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div>
+                <label for="rooms">Rooms</label>
+                <select id="rooms" required>
+                    <option>1 Room</option>
+                    <option>2 Rooms</option>
+                    <option>3 Rooms</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Check Availability">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-title">Contact Us</div>
+        <div class="footer-contact">
+            <a href="tel:+919876543210">&#128222; +91 9876543210</a>
+            <a href="mailto:info@rrhotels.com">&#9993; info@rrhotels.com</a>
+            <a href="#">&#128205; Kochi, Kerala</a>
+        </div>
+        <div class="footer-social">
+            <a href="#">&#128100;</a>
+            <a href="#">&#128247;</a>
+            <a href="#">&#128172;</a>
+        </div>
+        <div class="footer-copy">&copy; 2025 RR Hotels. All rights reserved.</div>
+    </footer>
+
+    <!-- Scroll JS -->
+    <script>
+        // Scroll to Top Button
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        window.onscroll = function() {
+            scrollBtn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+        };
+        scrollBtn.onclick = function() {
+            window.scrollTo({top:0, behavior:'smooth'});
+        };
+    </script>
+</body>
+</html>
